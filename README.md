@@ -1,16 +1,36 @@
-# React + Vite
+# 🚀 Panduan Setup Project UKK 2026 (React & Strapi)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Repositori ini berisi panduan instalasi lengkap untuk project UKK 2026 yang menggunakan **React (Vite)** untuk Frontend dan **Strapi (MySQL)** untuk Backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🧩 1. Persiapan Ekstensi VS Code
+Sebelum mulai *coding*, sangat disarankan untuk menginstal ekstensi berikut di Visual Studio Code agar proses *development* lebih cepat:
+- **ES7 React/Redux/GraphQL/React-Native snippets** (Kumpulan *snippets* untuk React dengan standar ES6/ES7)
+- **codex**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ 2. Persiapan Environment (Node.js & NVM)
+Project ini membutuhkan **Node.js versi 22.14.0**. Kita akan menggunakan NVM (Node Version Manager) untuk mempermudah pengaturan versi.
 
-## Expanding the ESLint configuration
+1. Download dan jalankan file instalasi `nvm-setup.exe`.
+2. Selesaikan proses instalasi sampai akhir.
+3. **Penting:** Tutup dan buka ulang terminal / Command Prompt (CMD) kamu.
+4. Instal dan aktifkan Node.js versi 22.14.0 dengan menjalankan perintah berikut:
+   ```bash
+   nvm install 22.14.0
+   nvm use 22.14.0
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+   # 1. Buat project Vite dengan template React
+npm create vite@latest UKK_2026 --template react
+
+# 2. Masuk ke folder project
+cd UKK_2026
+
+# 3. Instal dependensi bawaan
+npm install
+
+# 4. Instal React Router DOM untuk navigasi halaman
+npm install react-router-dom
